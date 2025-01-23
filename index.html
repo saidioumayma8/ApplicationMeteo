@@ -7,15 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Search Form -->
     <form class="weatherForm">
         <input type="text" class="cityInput" placeholder="Enter City">
-        <button type="submit">Search Weather</button>
+        <button type="submit">Search</button>
     </form>
 
-    <!-- Main Weather Section -->
-    <div class="mainWeather">
-        <!-- Weather cards for today and 5-day forecast -->
+    <div class="weatherContainer">
+        <!-- Today's Weather -->
+        <div class="todayWeather">
+            <div class="card todayCard">
+                <h1 class="cityName">Loading...</h1>
+                <h2 class="temperature">-- °C</h2>
+                <p class="description">--</p>
+                <img class="weatherIcon" src="" alt="Weather Icon">
+                <p class="details">Humidity: --% | Wind Speed: -- km/h</p>
+            </div>
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <div class="forecastWeather">
+            <div class="card forecastCard">
+                <h2 class="forecastDay">Day 1</h2>
+                <p class="forecastTemp">-- °C</p>
+                <img class="forecastIcon" src="" alt="Forecast Icon">
+            </div>
+            <!-- Repeat for other days... -->
+        </div>
     </div>
 
     <script src="app.js"></script>
